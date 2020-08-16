@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>momentum</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="js-clock">
+        <h1 class="js-title"></h1>
+        <span class="js-weather"></span>
+      </div>
+      <form action="" method="GET" class="js-form form">
+        <input type="text" placeholder=" Your name" class="js-form-input">
+      </form>
+      <h4 class="js-greeting greeting"></h4>
+      <form action="" method="GET" class="js-toDoForm">
+        <div class="form-box">
+          <div class="previous-operand"></div>
+          <input type="text" placeholder="Make your list">
+        </div>
+      </form>
+      <div class="js-toDoListBox">
+        <div class="pending">
+          <h1 class="todo-title">Pending</h1>
+          <ul class="todo-list js-toDoList">
+          </ul>
+        </div>
+        <div class="finished">
+          <h1 class="todo-title">Finished</h1>
+          <ul class="todo-list js-toDofinishList">
+          </ul>
+        </div>
+      </div>
+      <script src="src/clock.js"></script>
+      <script src="src/greeting.js"></script>
+      <script src="src/todo.js"></script>
+      <script src="src/bg.js"></script>
+      <script src="src/weather.js"></script>
+    </div>
+  </body>
+</html>
