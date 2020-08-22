@@ -11,35 +11,42 @@
     <div class="box">
       <div class="js-clock">
         <h1 class="js-title"></h1>
-        <span class="js-weather"></span>
+        <div class="none"></div>
+        <strong class="js-weather"></strong>
       </div>
       <form action="" method="GET" class="js-form form">
-        <input type="text" placeholder=" Your name" class="js-form-input">
+        <div class="greet-box">
+          <div class="previous-operand" id="name"></div>
+          <input type="text" placeholder=" Your name" class="js-form-input">
+        </div>
       </form>
-      <h4 class="js-greeting greeting"></h4>
+      <h4 class="js-greeting"></h4>
       <form action="" method="GET" class="js-toDoForm">
         <div class="form-box">
-          <div class="previous-operand"></div>
-          <input type="text" placeholder="Make your list">
+          <div class="previous-operand" id="todo"></div>
+          <input type="text" placeholder=" Make your list">
         </div>
       </form>
-      <div class="js-toDoListBox">
-        <div class="pending">
-          <h1 class="todo-title">Pending</h1>
-          <ul class="todo-list js-toDoList">
-          </ul>
-        </div>
-        <div class="finished">
-          <h1 class="todo-title">Finished</h1>
-          <ul class="todo-list js-toDofinishList">
-          </ul>
+      <div class="userToDoList">
+        <h2 id="user-todo-list"></h2>
+        <div class="js-toDoListBox">
+          <div class="pending">
+            <h1 class="todo-title">Pending</h1>
+            <ul class="todo-list js-toDoList">
+            </ul>
+          </div>
+          <div class="finished">
+            <h1 class="todo-title">Finished</h1>
+            <ul class="todo-list js-toDofinishList">
+            </ul>
+          </div>
         </div>
       </div>
-      <script src="src/clock.js"></script>
-      <script src="src/greeting.js"></script>
-      <script src="src/todo.js"></script>
-      <script src="src/bg.js"></script>
-      <script src="src/weather.js"></script>
     </div>
+    <script src="src/clock.js"></script>
+    <script src="src/greeting.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
   </body>
 </html>
